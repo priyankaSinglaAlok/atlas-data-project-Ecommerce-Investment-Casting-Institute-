@@ -1,0 +1,37 @@
+-- INSERT eCom_ItemTypeItemTypeCustomField 
+BEGIN TRAN
+
+INSERT INTO dbo.eCom_ItemTypeItemTypeCustomField
+        ( ItemTypeCustomFieldID ,
+          ECOM_ItemTypeID ,
+          DisplayOrder
+        )
+SELECT 10, 2, 1
+UNION
+SELECT 1, 2, 2
+UNION
+SELECT 3, 2, 3
+UNION
+SELECT 2, 2, 4
+UNION
+SELECT 5, 2, 5
+UNION
+SELECT 7, 2, 6
+UNION
+SELECT 9, 2, 7
+UNION
+SELECT 6, 2, 8
+UNION
+SELECT 8, 2, 9
+UNION
+SELECT 12, 1, 1
+UNION
+SELECT 11, 1, 2
+UNION
+SELECT 14, 1, 3
+UNION
+SELECT 13, 1, 4
+UNION
+SELECT 4, 1, 5
+
+-- COMMIT
